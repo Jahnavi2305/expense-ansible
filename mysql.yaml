@@ -21,9 +21,9 @@
 
   - name: start the server
     ansible.builtin.service:
-    name: mysqld
-    state: present
-    enabled: yes
+     name: mysqld
+     state: present
+     enabled: yes
 
   - name: connect mysql server
     community.mysql.mysql_info:
